@@ -13,7 +13,7 @@ function SilderComp() {
   const nextSlide = () => {
     setIndex((oldIndex) => {
       let index = oldIndex + 1;
-      if (index > 99) {
+      if (index > 95) {
         index = 30;
       }
       return index;
@@ -22,7 +22,7 @@ function SilderComp() {
   const prevSlide = () => {
     setIndex((oldIndex) => {
       let index = oldIndex - 1;
-      if (index < 1) {
+      if (index < 4) {
         index = 40;
       }
       return index;
@@ -30,11 +30,11 @@ function SilderComp() {
   };
 
   const style_card = {
-    transform: `translateX(-${index * 320}px)`,
+    transform: `translateX(-${index * 25}vw)`,
     transition: "0.5s linear",
-    minWidth: "300px",
-    height: "60%",
-    margin: "0 10px",
+    minWidth: "23vw",
+    height:"17vw",
+    margin: "0 1vw",
     display: "flex",
     justifyContent: "flex-start",
   };
@@ -43,7 +43,7 @@ function SilderComp() {
     let slider = setInterval(() => {
       setIndex((oldIndex) => {
         let index = oldIndex + 1;
-        if (index > 99) {
+        if (index > 95) {
           index = 30;
         }
         return index;
@@ -67,16 +67,17 @@ function SilderComp() {
             STARTUP REVIEWS
           </h2>
         </div>
-        <div className="section-center" style={{ overflowX: "hidden" }}>
+        <div className="section-center" style={{ overflowX: "hidden", paddingTop:"70px" }}>
           {Data.map((e) => {
             return (
               <div style={style_card}>
                 <Card
                   hoverable
                   style={{
-                    width: "300px",
+                    minWidth:"22vw",
+                    height:"17vw",
                     position: "relative",
-                    marginTop: "70px",
+                    // marginTop: "70px",
                   }}
                   cover={
                     <img
@@ -88,6 +89,7 @@ function SilderComp() {
                         left: "50%",
                         clipPath: `circle()`,
                         transform: "translate(-50%)",
+                        zIndex:1
                       }}
                       src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
                     />
@@ -102,14 +104,14 @@ function SilderComp() {
               </div>
             );
           })}
+          
         </div>
-
         <button className="prev" onClick={prevSlide}>
-          <ArrowLeftOutlined />
-        </button>
-        <button className="next" onClick={nextSlide}>
-          <ArrowRightOutlined />
-        </button>
+            <ArrowLeftOutlined />
+          </button>
+          <button className="next" onClick={nextSlide}>
+            <ArrowRightOutlined />
+          </button>
       </section>
     </div>
   );

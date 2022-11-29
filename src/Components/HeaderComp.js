@@ -12,7 +12,7 @@ const Header_style = {
   justifyContent: "space-between",
   alignItems: "center",
   boxShadow: "3px 2px 5px 0 rgba(0,0,0,0.16)",
-  padding: "0 57px",
+  padding: "0 4vw 0 6vw",
   boxSizing: "border-box",
 };
 
@@ -28,15 +28,16 @@ const HeaderComp = () => (
         alignItems: "center",
       }}
     >
-      <MenuOutlined />
+      <MenuOutlined style={{ fontSize: "1.5vw", cursor: "pointer" }} />
       <img
         src={require("../logo.png")}
         alt="logo"
         style={{
-          width: "100px",
-          height: "40px",
+          width: "8vw",
+          height: "3vw",
           marginLeft: "17px",
           marginTop: "-7px",
+          cursor: "pointer",
         }}
       />
     </div>
@@ -50,6 +51,7 @@ const HeaderComp = () => (
       <Menu
         mode="horizontal"
         defaultSelectedKeys={["0"]}
+        style={{ fontSize: "1.3vw" }}
         items={[
           {
             key: 1,
@@ -68,7 +70,19 @@ const HeaderComp = () => (
         ]}
       />
 
-      <Button style={{ background: "black", color: "white" }}>Login</Button>
+      <button
+        style={{
+          background: "black",
+          color: "white",
+          cursor: "pointer",
+          padding: ".5vw 2vw",
+          fontSize: "1.0vw",
+          borderRadius: "0.5vw",
+          marginLeft: "1.5vw",
+        }}
+      >
+        Login
+      </button>
     </div>
   </Header>
 );

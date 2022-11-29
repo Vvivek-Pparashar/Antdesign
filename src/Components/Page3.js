@@ -3,7 +3,7 @@ import { Col, Row } from "antd";
 
 const page_3_img_style = {
   width: "100%",
-  height: "60vw ",
+  height: "50vw ",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   display: "flex",
@@ -14,7 +14,7 @@ const page_3_img_style = {
 };
 
 const page3_text_Style = {
-  fontSize: "64px",
+  fontSize: "4vw",
   fontWeight: "400",
   margin: "0px",
   textAlign: "center",
@@ -36,14 +36,14 @@ const Page3 = () => (
             alignItems: "flex-start",
           }}
         >
-          <h1 style={{ fontSize: "64px", marginLeft: "20px" }}>
+          <h1 style={{ fontSize: "4vw", marginLeft: "3vw", marginTop:"1vw" }}>
             Our
             <br />
             Services
           </h1>
           <div>
             <h5 style={{ ...page3_text_Style }}>Assistance</h5>
-            <p style={{ textAlign: "center" }}>
+            <p style={{textAlign:"center", fontSize:"1.27vw"}}>
               lWe believe in promoting innovative strategies, a multifaceted
               platfrom
             </p>
@@ -57,8 +57,8 @@ const Page3 = () => (
             ...page_3_img_style,
           }}
         >
-          <h5 style={{ ...page3_text_Style }}>startups</h5>
-          <p style={{ textAlign: "center" }}>
+          <h5 style={{ ...page3_text_Style }}>Startups</h5>
+          <p style={{ textAlign: "center", fontSize:"1.27vw" }}>
             lWe believe in promoting innovative strategies, a multifaceted
             platfrom
           </p>
@@ -72,7 +72,7 @@ const Page3 = () => (
           }}
         >
           <h5 style={{ ...page3_text_Style }}>Reviews</h5>
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", fontSize:"1.27vw" }}>
             lWe believe in promoting innovative strategies, a multifaceted
             platfrom
           </p>
