@@ -1,0 +1,34 @@
+.page2_left {
+    width: 30vw;
+    height: 36.5vw;
+    background: #142C64;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: '#32325d40 0px 13px 27px  -5px , #0000004d 0px 8px 16px -8px';
+  }
+  
+  .minusSign_style {
+    font-size: 34px;
+    padding: 0;
+    margin-left: -10px;
+    color: #142C64;
+  }
+  
+  .image_style {
+    width: 27vw;
+    height: 34vw;
+    border-bottom-left-radius: 2vw;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+  }
+  
+  
+  .arrow_holder  {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: -5px;
+    cursor: pointer;
+    color: #142C64;
+  };

@@ -1,5 +1,5 @@
 import { Card } from "antd";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Data from "./Data";
 import "./New.css";
 import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";

@@ -8,7 +8,7 @@ import Page3 from "./Components/Page3";
 import Last2Pages from "./Components/Last2Pages";
 import VideoPlayer from "./Components/VideoPlayer";
 import SliderComp from "./Components/SliderComp";
-import SiderComp from "./Components/SiderComp";
+
 
 const { Content } = Layout;
 
@@ -22,20 +22,16 @@ const content_style = {
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 
-
-
 const App = () => {
-  const [siderVis, setSiderVis] = useState(true)
+  const [siderVis, setSiderVis] = useState(true);
 
   const changeVis = () => {
     setSiderVis(!siderVis);
-  }
-  
+  };
+
   return (
     <Layout>
-      {/* <SiderComp siderVis = {siderVis} changeVis = {changeVis}/> */}
-      <Layout >
-      <HeaderComp siderVis = {siderVis} changeVis = {changeVis}/>
+      <HeaderComp siderVis={siderVis} changeVis={changeVis} />
       <Content style={content_style}>
         <Page1 />
         <Page2 />
@@ -44,7 +40,6 @@ const App = () => {
         <SliderComp />
         <Last2Pages />
       </Content>
-    </Layout>
     </Layout>
   );
 };

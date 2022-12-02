@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Layout, Menu } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import { Button, Drawer, Space } from "antd";
 import DrawerComp from "./DrawerComp";
 import "./HeaderComp.css";
 
@@ -47,7 +46,7 @@ const HeaderComp = () => {
           items={[
             {
               key: 1,
-              label: "For Reviwers",
+              label: "For Reviewrs",
             },
 
             {

@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import { Button, Drawer, Radio, Space, Menu } from "antd";
+import React from "react";
+import {  Drawer, Menu } from "antd";
 
 const DrawerComp = ({ setOpen, open }) => {
-  //const [open, setOpen] = useState(openhead);
-  const [placement, setPlacement] = useState("right");
-  const showDrawer = () => {
-    setOpen(true);
-    // setOpenhead(true);
-  };
-  const onChange = (e) => {
-    setPlacement(e.target.value);
-  };
+  //const [open, setOpen] = useState(openhead)
+
   const onClose = () => {
     setOpen(false);
     // setOpenhead(false);
@@ -39,7 +32,7 @@ const DrawerComp = ({ setOpen, open }) => {
           items={[
             {
               key: 1,
-              label: "For Reviwers",
+              label: "For Reviewrs",
               style: { textAlign: "center" },
             },
 
