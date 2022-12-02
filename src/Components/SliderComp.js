@@ -5,7 +5,7 @@ import "./New.css";
 import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 
 const { Meta } = Card;
-function SilderComp() {
+function SliderComp() {
   const [index, setIndex] = React.useState(
     40 + Math.ceil(Math.random() * (50 - 40))
   );
@@ -117,4 +117,4 @@ function SilderComp() {
   );
 }
 
-export default SilderComp;
+export default SliderComp;

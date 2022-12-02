@@ -2,15 +2,39 @@ import React from "react";
 import { Col, Row } from "antd";
 import { MinusOutlined, CaretRightOutlined } from "@ant-design/icons";
 
+
 const page2_left = {
   width: "30vw",
-  height: "37vw",
+  height: "36.5vw",
   background: "#142C64",
   borderRadius: "30px",
   display: "flex",
   justifyContent: "flex-end",
-  // boxShadow: `#32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px`,
   boxShadow: `#32325d40 0px 13px 27px  -5px , #0000004d 0px 8px 16px -8px`,
+};
+
+const minusSign_style = {
+  fontSize: "34px",
+  padding: "0",
+  marginLeft: "-10px",
+  color: "#142C64",
+};
+
+const image_style = {
+  width: "27vw",
+  height: "34vw",
+  borderBottomLeftRadius: "2vw",
+  borderBottom: "3px solid white",
+  borderLeft: "3px solid white",
+};
+
+const arrow_holder = {
+  display: "flex",
+  alignItems: "center",
+  marginTop: "-15px",
+  marginLeft: "-5px",
+  cursor: "pointer",
+  color: "#142C64",
 };
 
 ////////////////////////////////////////////////////////
@@ -26,11 +50,7 @@ const Page2 = () => {
             <img
               src={require("../page2_img.jpg")}
               alt="vivek"
-              style={{
-                width: "27vw",
-                height: "34vw",
-                borderBottomLeftRadius: "2vw",
-              }}
+              style={image_style}
             />
           </div>
         </Col>
@@ -52,38 +72,16 @@ const Page2 = () => {
             of projects.
           </h5>
 
-          <b style={{cursor:"pointer", color:"#142C64"}}>About Us</b>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginTop: "-15px",
-              marginLeft: "-5px",
-              cursor:"pointer",
-              color:"#142C64"
-            }}
-          >
-            <MinusOutlined
-              style={{ fontSize: "34px", color: "black", padding: "0", color:"#142C64" }}
-            />
+          <b style={{ cursor: "pointer", color: "#142C64" }}>About Us</b>
+          <div className="arrow_holder" style={arrow_holder}>
             <MinusOutlined
               style={{
-                fontSize: "34px",
-                color: "black",
-                padding: "0",
-                marginLeft: "-10px",
-                color:"#142C64"
+                ...minusSign_style,
+                marginLeft: "0",
               }}
             />
-            <MinusOutlined
-              style={{
-                fontSize: "34px",
-                color: "black",
-                padding: "0",
-                marginLeft: "-10px",
-                color:"#142C64"
-              }}
-            />
+            <MinusOutlined style={minusSign_style} />
+            <MinusOutlined style={minusSign_style} />
             <CaretRightOutlined
               style={{ fontSize: "20px", marginLeft: "-10px" }}
             />

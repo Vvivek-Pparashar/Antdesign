@@ -5,7 +5,7 @@ const Last2Pages = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(${require("../8.png")}`,
+          backgroundImage: `url(${require("../news.png")}`,
           width: "100%",
           height: "60vw ",
           backgroundRepeat: "no-repeat",
@@ -20,7 +20,7 @@ const Last2Pages = () => {
 
       <div
         style={{
-          backgroundImage: `url(${require("../10.png")}`,
+          backgroundImage: `url(${require("../footer2.png")}`,
           height: "45vw ",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
