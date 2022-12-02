@@ -17,7 +17,7 @@ const DrawerComp = ({ setOpen, open }) => {
   };
   return (
     <>
-      <Drawer placement={placement} width={500} onClose={onClose} open={open}>
+      <Drawer placement={"left"} width={500} onClose={onClose} open={open}>
         <img
           src={require("../logo.png")}
           alt="logo"

@@ -14,41 +14,33 @@ const { Header } = Layout;
 const HeaderComp = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Header className="header_style" style={{ background: "white",  padding: "0 4vw 0 6vw" }}>
+    <Header
+      className="header_style"
+      style={{ background: "white", padding: "0 4vw 0 6vw" }}
+    >
       <div
         style={{
           display: "flex",
           alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+          height: "100%",
         }}
       >
+        <DrawerComp open={open} setOpen={setOpen} />
+        <img src={require("../logo.png")} alt="logo" className="logo_img" />
+
         <MenuOutlined
           className="bigmenu"
-          style={{ fontSize: "1.5vw", cursor: "pointer" }}
+          style={{ fontSize: "5vw", cursor: "pointer", textAlign: "center" }}
           onClick={() => {
             setOpen(!open);
           }}
         />
-        <DrawerComp open={open} setOpen={setOpen} />
-        <img
-          src={require("../logo.png")}
-          alt="logo"
-          style={{
-            width: "8vw",
-            height: "3vw",
-            marginTop: "-7px",
-            cursor: "pointer",
-          }}
-        />
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
+      <div className="menu">
         <Menu
-          className="menubtn"
           mode="horizontal"
           defaultSelectedKeys={["0"]}
           style={{ fontSize: "1.3vw" }}
@@ -69,8 +61,7 @@ const HeaderComp = () => {
             },
           ]}
         />
-
-        <button className="menubtn_button">Login</button>
+        <button className="menu_button">Login</button>
       </div>
     </Header>
   );

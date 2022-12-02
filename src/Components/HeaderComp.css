@@ -10,20 +10,27 @@
   box-sizing: border-box;
 }
 
-.menubtn_button{
-    background: black;
-    color: white;
-    cursor: pointer;
-    padding: .7vw 2vw;
-    font-size: 1.0vw;
-    border-radius: 0.5vw;
-    margin-left: 1.5vw;
-    border: none;
+.menu_button {
+  background: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.7vw 2vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  margin-left: 1.5vw;
+  border: none;
+}
+
+.logo_img {
+  width: 8vw;
+  height: 3vw;
+  cursor: "pointer";
 }
 
 @media screen and (min-width: 751px) {
-  .menubtn {
-    display: block;
+  .menu {
+    display: flex;
+    align-items: center;
   }
 
   .bigmenu {
@@ -32,15 +39,15 @@
 }
 
 @media screen and (max-width: 750px) {
-  .menubtn {
-    margin-top: 20px;
+  .menu {
     display: none;
   }
-  .menubtn_button{
+  .menubtn_button {
     display: none;
   }
-  .bigmenu {
-    margin-top: 10px;
-    right: 10px;
+
+  .logo_img {
+    width: 20vw;
+    height: 10vw;
   }
 }
