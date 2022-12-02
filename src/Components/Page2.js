@@ -43,10 +43,10 @@ const Page2 = () => {
           }}
           md={{
             span: 10,
+            offset: 4,
           }}
           lg={{
             span: 10,
-
             offset: 4,
           }}
         >
