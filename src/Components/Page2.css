@@ -51,6 +51,7 @@
   .image_style {
     width: 70vw;
     height: 83vw;
+    border-bottom-left-radius: 4vw;
   }
 
   .page2_left {

@@ -1,0 +1,27 @@
+.logo_starvest_drawer {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.items_style_drawer {
+  text-align: center;
+  font-size: 5vw;
+  /* border-bottom: 1px solid black; */
+}
+
+.button_drawer {
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 1.5vw 6vw;
+  font-size: 4vw;
+  border-radius: 4vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}

@@ -1,27 +1,18 @@
 import React from "react";
-import {  Drawer, Menu } from "antd";
+import { Drawer, Menu } from "antd";
+import "./DrawerComp.css";
 
 const DrawerComp = ({ setOpen, open }) => {
-  //const [open, setOpen] = useState(openhead)
-
   const onClose = () => {
     setOpen(false);
-    // setOpenhead(false);
   };
   return (
     <>
-      <Drawer placement={"left"} width={500} onClose={onClose} open={open}>
+      <Drawer placement={"left"} width={"100vw"} onClose={onClose} open={open}>
         <img
+          className="logo_starvest_drawer"
           src={require("../logo.png")}
           alt="logo"
-          style={{
-            width: "8vw",
-            height: "3vw",
-            marginLeft: "50%",
-            transform: "translateX(-50%)",
-            marginBottom:"30px",
-            cursor: "pointer",
-          }}
         />
         <Menu
           mode="vertical"
@@ -32,38 +23,25 @@ const DrawerComp = ({ setOpen, open }) => {
           items={[
             {
               key: 1,
-              label: "For Reviewrs",
-              style: { textAlign: "center" },
+              label: "For Reviewers",
+              className: "items_style_drawer",
             },
 
             {
               key: 2,
               label: "For Founders",
-              style: { textAlign: "center" },
+              className: "items_style_drawer",
             },
 
             {
               key: 3,
               label: "Contact Us",
-              style: { textAlign: "center" },
+              className: "items_style_drawer",
             },
           ]}
         />
 
-        <button
-          style={{
-            background: "black",
-            color: "white",
-            cursor: "pointer",
-            padding: ".5vw 2vw",
-            fontSize: "1.0vw",
-            borderRadius: "0.5vw",
-            marginLeft: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          Login
-        </button>
+        <button className="button_drawer">Login</button>
       </Drawer>
     </>
   );
