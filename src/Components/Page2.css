@@ -17,7 +17,7 @@
 .image_style {
   width: 27vw;
   height: 34vw;
-  border-bottom-left-radius: 2vw;
+  border-bottom-left-radius: 1.5vw;
   border-bottom: 3px solid white;
   border-left: 3px solid white;
 }
