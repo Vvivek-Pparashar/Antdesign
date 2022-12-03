@@ -46,7 +46,7 @@ const HeaderComp = () => {
           items={[
             {
               key: 1,
-              label: "For Reviewrs",
+              label: "For Reviewers",
             },
 
             {

@@ -14,23 +14,6 @@
   padding: "0 57px";
 }
 
-.storyTelling{
-  font-size: 44px;
-  position: relative;
-  color: #142C64;
-  /* margin-bottom: 10px; */
-}
 
-.storyTelling::after{
-  content: '';
-  width: 100px;
-  background-color: orange;
-  height: 3px;
-  position: absolute;
-  bottom: -10%;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
 
 
