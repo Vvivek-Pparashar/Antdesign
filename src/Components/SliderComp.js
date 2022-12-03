@@ -1,7 +1,7 @@
-import { Card } from "antd";
+import { Card} from "antd";
 import React, { useEffect } from "react";
 import Data from "./Data";
-import "./New.css";
+import "./SliderComp.css";
 import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 
 const { Meta } = Card;
@@ -29,14 +29,15 @@ function SliderComp() {
     });
   };
 
+  const width = window.innerWidth <= 500 ? true : false;
+
   const style_card = {
-    transform: `translateX(-${index * 25}vw)`,
+    transform: `translateX(-${width ? index * 80 : index * 25}vw)`,
     transition: "0.5s linear",
-    minWidth: "23vw",
-    height:"17vw",
-    margin: "0 1vw",
-    display: "flex",
-    justifyContent: "flex-start",
+    minWidth: width ? "70vw" : "23vw",
+    margin: `0 ${width ? 4.99 : 1}vw`,
+    height: `${width ? "60vw" : "100%"}`,
+    position: "relative",
   };
 
   useEffect(() => {
@@ -55,9 +56,7 @@ function SliderComp() {
   }, [index]);
 
   return (
-    <div
-      style={{ width: "100vw", background: "#050C26", paddingBottom: "70px" }}
-    >
+    <div className="first_div">
       <section className="section">
         <div className="title">
           <h2
@@ -67,51 +66,35 @@ function SliderComp() {
             STARTUP REVIEWS
           </h2>
         </div>
-        <div className="section-center" style={{ overflowX: "hidden", paddingTop:"70px" }}>
+        <div className="section-center">
           {Data.map((e) => {
             return (
-              <div style={style_card}>
-                <Card
-                  hoverable
-                  style={{
-                    minWidth:"22vw",
-                    height:"17vw",
-                    position: "relative",
-                    // marginTop: "70px",
-                  }}
-                  cover={
-                    <img
-                      alt="example"
-                      style={{
-                        width: "100px",
-                        position: "absolute",
-                        top: "-70px",
-                        left: "50%",
-                        clipPath: `circle()`,
-                        transform: "translate(-50%)",
-                        zIndex:1
-                      }}
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                    />
-                  }
-                >
-                  <Meta
-                    title="Europe Street beat"
-                    style={{ margin: "44px 0 " }}
-                    description="lorea fajfaj abfjafba aljfhaljkfa alflhaljkfh alfhajfhaj fafhajfhe jfuef haufh a ufhaf "
+              <Card
+                hoverable
+                style={style_card}
+                cover={
+                  <img
+                    id="review_img"
+                    alt="example"
+                    src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
                   />
-                </Card>
-              </div>
+                }
+              >
+                <Meta
+                  title="Europe Street beat"
+                  style={{ margin: "44px 0 " }}
+                  description="lorea fajfaj abfjafba aljfhaljkfa alflhaljkfh alfhajfhaj fafhajfhe jfuef haufh a ufhaf "
+                />
+              </Card>
             );
           })}
-          
         </div>
         <button className="prev" onClick={prevSlide}>
-            <ArrowLeftOutlined />
-          </button>
-          <button className="next" onClick={nextSlide}>
-            <ArrowRightOutlined />
-          </button>
+          <ArrowLeftOutlined />
+        </button>
+        <button className="next" onClick={nextSlide}>
+          <ArrowRightOutlined />
+        </button>
       </section>
     </div>
   );

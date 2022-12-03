@@ -1,15 +1,17 @@
 import React from "react";
 
+const width = window.innerWidth <= 500 ? true : false;
+
 const Last2Pages = () => {
   return (
     <>
       <div
         style={{
-          backgroundImage: `url(${require("../news.png")}`,
-          width: "100%",
-          height: "60vw ",
+          backgroundImage: `url(${require(`../${width?"news_page_news_2": "news"}.png`)}`,
+          width: "100vw",
+          height: `${width?210:60}vw`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           display: "flex",
           flexDirection: "column",
           color: "white",
@@ -20,8 +22,9 @@ const Last2Pages = () => {
 
       <div
         style={{
-          backgroundImage: `url(${require("../footer2.png")}`,
-          height: "45vw ",
+          backgroundImage: `url(${require(`../${width?"Footer_Phone.jpg": "Footer_web.jpg"}`)}`,
+          width: "100vw",
+          height: `${width?180:45}vw`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           display: "flex",
