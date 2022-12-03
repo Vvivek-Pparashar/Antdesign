@@ -13,10 +13,7 @@ const { Header } = Layout;
 const HeaderComp = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Header
-      className="header_style"
-      style={{ background: "white", padding: "0 4vw 0 6vw" }}
-    >
+    <Header id="header_style">
       <div
         style={{
           display: "flex",
