@@ -7,9 +7,9 @@ const Last2Pages = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(${require(`../${width?"news_page_news_2": "news"}.png`)}`,
+          backgroundImage: `url(${require(`../${width?"newss_phone.jpg": "newss.jpg"}`)}`,
           width: "100vw",
-          height: `${width?210:60}vw`,
+          height: `${width?180:44}vw`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           display: "flex",
