@@ -7,9 +7,11 @@ const Last2Pages = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(${require(`../${width?"newss_phone.jpg": "newss.jpg"}`)}`,
+          backgroundImage: `url(${require(`../${
+            width ? "newss_phone.jpg" : "newss.jpg"
+          }`)}`,
           width: "100vw",
-          height: `${width?180:44}vw`,
+          height: `${width ? 180 : 44}vw`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           display: "flex",
@@ -22,9 +24,11 @@ const Last2Pages = () => {
 
       <div
         style={{
-          backgroundImage: `url(${require(`../${width?"Footer_Phone.jpg": "Footer_web.jpg"}`)}`,
+          backgroundImage: `url(${require(`../${
+            width ? "Footer_Phone.jpg" : "Footer_web.jpg"
+          }`)}`,
           width: "100vw",
-          height: `${width?180:45}vw`,
+          height: `${width ? 180 : 45}vw`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           display: "flex",
