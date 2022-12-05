@@ -1,0 +1,32 @@
+.first_image,
+.second_image {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  height: 44vw;
+}
+
+.first_image {
+  background-image: url("../assests/news_web.jpg");
+}
+
+.second_image {
+  background-image: url("../assests/Footer_web.jpg");
+}
+
+@media screen and (max-width: 600px) {
+  .first_image {
+    background-image: url("../assests/news_phone.jpg");
+    height: 180vw;
+  }
+
+  .second_image {
+    background-image: url("../assests/Footer_Phone.jpg");
+    height: 179vw;
+  }
+}
