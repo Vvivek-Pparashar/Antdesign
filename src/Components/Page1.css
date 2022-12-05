@@ -1,6 +1,6 @@
 #page1 {
   width: 100%;
-  height: 89vh;
+  height: 41vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   background: #1b3061;
-  height: 88vh;
+  height: 41vw;
   clip-path: polygon(0px 0px, 100vw 0px, 100% 15vw, 0px 100%);
 }
 

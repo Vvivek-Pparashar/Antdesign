@@ -29,7 +29,7 @@ function SliderComp() {
     });
   };
 
-  const width = window.innerWidth <= 500 ? true : false;
+  const width = window.innerWidth <= 600 ? true : false;
 
   const style_card = {
     transform: `translateX(-${width ? index * 80 : index * 25}vw)`,

@@ -6,6 +6,8 @@ import "./Page3.css";
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 
+console.log(window.innerWidth)
+
 const Page3 = () => (
   <div style={{ marginTop: "60px" }}>
     <Row>
@@ -13,7 +15,8 @@ const Page3 = () => (
         xs={{
           span: 24,
         }}
-        lg={{
+
+        md={{
           span: 8,
         }}
       >
@@ -36,7 +39,7 @@ const Page3 = () => (
         xs={{
           span: 24,
         }}
-        lg={{
+        md={{
           span: 8,
         }}
       >
@@ -57,7 +60,7 @@ const Page3 = () => (
         xs={{
           span: 24,
         }}
-        lg={{
+        md={{
           span: 8,
         }}
       >

@@ -9,7 +9,7 @@ const VideoPlayer = () => {
       <h1 className="storyTelling">STARTUPS STORY TELLING</h1>
       <video
         id="my-video"
-        class="video-js"
+        className="video-js"
         controls
         preload="auto"
         poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"

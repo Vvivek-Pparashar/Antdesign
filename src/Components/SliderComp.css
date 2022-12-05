@@ -85,7 +85,7 @@
 
 /* ============================== Media Queries =========================== */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   #review_img {
     width: 20vw;
     height: 20vw;
