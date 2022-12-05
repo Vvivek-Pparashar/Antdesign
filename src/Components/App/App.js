@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player/lazy'
 import { Layout } from "antd";
 import HeaderComp from "../Header/HeaderComp";
 import Page1 from "../Page1/Page1";
@@ -41,6 +43,10 @@ const App = () => {
         <Last2Pages />
       </Content>
     </Layout>
+    // <>
+    //   <YouTube videoId="ynVikeFUvW8"/>
+    //   <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+    // </>
   );
 };
 export default App;
