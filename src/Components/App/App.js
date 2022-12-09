@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import YouTube from 'react-youtube';
-import ReactPlayer from 'react-player/lazy'
 import { Layout } from "antd";
 import HeaderComp from "../Header/HeaderComp";
 import Page1 from "../Page1/Page1";
@@ -10,7 +8,6 @@ import Page3 from "../Page3/Page3";
 import Last2Pages from "../Last2pages/Last2Pages";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import SliderComp from "../Slider/SliderComp";
-
 
 const { Content } = Layout;
 
@@ -40,6 +37,7 @@ const App = () => {
         <Page3 />
         <VideoPlayer />
         <SliderComp />
+
         <Last2Pages />
       </Content>
     </Layout>
