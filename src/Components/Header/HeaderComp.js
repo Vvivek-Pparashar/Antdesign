@@ -24,7 +24,11 @@ const HeaderComp = () => {
         }}
       >
         <DrawerComp open={open} setOpen={setOpen} />
-        <img src={require("../assests/logo.png")} alt="logo" className="logo_img" />
+        <img
+          src={require("../assests/logo.png")}
+          alt="logo"
+          className="logo_img"
+        />
 
         <MenuOutlined
           className="bigmenu"
@@ -57,6 +61,7 @@ const HeaderComp = () => {
             },
           ]}
         />
+        <button className="menu_button join">Join</button>
         <button className="menu_button">Login</button>
       </div>
     </Header>

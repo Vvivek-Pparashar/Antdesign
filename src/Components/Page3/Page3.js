@@ -13,7 +13,6 @@ const Page3 = () => (
         xs={{
           span: 24,
         }}
-
         md={{
           span: 8,
         }}
@@ -22,13 +21,14 @@ const Page3 = () => (
           <h1 className="page3_h1">
             Our
             <br />
-            Services
+            Features
           </h1>
           <div>
             <h5 className="page3_text_Style">Assistance</h5>
             <p className="page3_p">
-              lWe believe in promoting innovative strategies, a multifaceted
-              platfrom
+              Start your journey with us to get a fair guidance and detailed
+              understanding of startups all under one platform. startups all
+              under one platform.
             </p>
           </div>
         </div>
@@ -49,8 +49,9 @@ const Page3 = () => (
         >
           <h5 className="page3_text_Style">Startups</h5>
           <p className="page3_p">
-            lWe believe in promoting innovative strategies, a multifaceted
-            platfrom
+            We provide an examined overlook of startups for users to easily and
+            efficiently understand the market and functioning of business , also
+            to provide a fair share of knowledge to the users .
           </p>
         </div>
       </Col>
@@ -62,16 +63,12 @@ const Page3 = () => (
           span: 8,
         }}
       >
-        <div
-          className="page_3_img_style"
-          style={{
-            backgroundImage: `url(${require("../assests//page3_2.jpg")}`,
-          }}
-        >
+        <div className="page_3_img_style page3_3rd_ele">
           <h5 className="page3_text_Style">Reviews</h5>
           <p className="page3_p">
-            lWe believe in promoting innovative strategies, a multifaceted
-            platfrom
+            The reviews of authentic users will help the startup to grow and
+            withstand the expectation of users and market trends, also will add
+            to its position in market .
           </p>
         </div>
       </Col>

@@ -45,8 +45,9 @@
   }
 
   #video {
-    width: 90vw;
-    height: 60vw;
+    width: 95vw;
+    height: 55vw;
     margin: 3vw 0 5vw 0;
+    border-radius: 20px;
   }
 }

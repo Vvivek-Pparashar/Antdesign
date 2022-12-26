@@ -40,7 +40,7 @@ const DrawerComp = ({ setOpen, open }) => {
             },
           ]}
         />
-
+        <button className="button_drawer">Join Us</button>
         <button className="button_drawer">Login</button>
       </Drawer>
     </>
