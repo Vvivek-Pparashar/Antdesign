@@ -1,49 +1,33 @@
 import React from "react";
 import { Collapse } from "antd";
-import './Accordion.css'
+import HeaderData from "./HeaderData";
+import "./Accordion.css";
 const { Panel } = Collapse;
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
 
 const list = [];
+let i = 0;
 
-for (let i = 1; i <= 10; i++) {
-  list.push(
-    <Panel className="vivek"
-      header={<>This is panel header {i}</>}
-      key={i}
-      style={{
-        backgroundColor: "#F8F1FF",
-        fontSize: "17px",
-        padding: "0px 0",
-        borderBottom: "1px solid black",
-      }}
-    >
-      <p style={{ backgroundColor: "#F8F1FF" }}>{text}</p>
+HeaderData.map((e) => {
+  i++;
+  return list.push(
+    <Panel className="panel" header={<b>{e.Ques}</b>} key={i}>
+      <p className="panel_p">{e.Ans}</p>
     </Panel>
   );
-}
+});
 const Accordion = () => (
-  <div style={{ backgroundColor: "white", padding: "30px 0" }}>
-    <Collapse
-      accordion
-      style={{
-        width: "90vw",
-        margin: "0 auto",
-        padding: "100px 0",
-        backgroundColor: "#F8F1FF",
-        // display:"flex",
-        // alignItems:"center"
-      }}
-      ghost={true}
-      expandIconPosition={"end"}
-      bordered={true}
-    >
-      {list}
-    </Collapse>
+  <div className="div1">
+    <div className="div2">
+      <h1 className="h1">FAQ</h1>
+      <Collapse
+        accordion
+        className="accordion"
+        expandIconPosition={"end"}
+        bordered={false}
+      >
+        {list}
+      </Collapse>
+    </div>
   </div>
 );
 export default Accordion;

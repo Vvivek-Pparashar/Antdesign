@@ -1,4 +1,60 @@
-.ant-collapse-header{
-        display: flex;
-        align-items: center;
+.div1 {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0 50px;
+}
+
+.div2 {
+  width: 95%;
+  margin: auto;
+  background-color: #f5f5f5;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.h1 {
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.panel {
+  background-color: #f5f5f5;
+  font-size: 15px;
+  padding: 5px 0px 7px;
+}
+
+.panel_p {
+  background-color: #f5f5f5;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 750px) {
+  .div1 {
+    padding: 10px 0 50px;
+    margin: -2px 0 0;
+  }
+
+  .div2 {
+    padding: 30px 10px;
+  }
+
+  .h1 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .panel {
+    font-size: 17px;
+  }
+
+  .panel_p {
+    font-size: 15px;
+    margin: 0 0 0px 0;
+  }
 }
